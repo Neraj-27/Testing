@@ -1,0 +1,137 @@
+img{
+    max-width: 100%;
+    height: auto;
+    background: lightblue;
+    background: radial-gradient(white 30%, lightblue 70%);
+}
+
+.fa-star,
+.fa-star-half{
+    color: black;
+    padding: 3% 0;
+}
+
+#cart_count{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 10rem;
+}
+
+.shopping-cart{
+    padding: 3% 0;
+}
+
+.cart-items + .cart-items{
+    padding: 2% 0;
+}
+
+.price-details h6{
+    padding: 3% 2%;
+}
+
+
+/* Styles for the card container */
+.card-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+    background-color:#f0f0f0;
+    width:80%;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+}
+
+/* Styles for individual cards */
+.card {
+    width: 250px;
+    background-color: #eee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Styles for card image */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Styles for card body */
+.card-body {
+    padding: 20px;
+}
+
+/* Styles for card title */
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:orangered;
+}
+
+/* Styles for card text */
+.card-text {
+    font-size: 16px;
+    color: rebeccapurple;
+}
+
+/* Hover effect for card */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Styles */
+.wrapper {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+}
+
+#sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    overflow-y: auto;
+    z-index: 1000;
+    transition: all 0.5s ease;
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-item {
+    padding: 10px 15px;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.sidebar-link {
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar-link:hover {
+    color: #fff;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+}
+
